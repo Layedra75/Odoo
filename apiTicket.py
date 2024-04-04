@@ -26,3 +26,5 @@ def crear_ticket():
     else:
         return jsonify({'error': 'Método no permitido'}), 405
 
+if __name__ == '__main__':
+    app.run(debug=True, port=5001)

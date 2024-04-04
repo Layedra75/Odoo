@@ -25,3 +25,6 @@ def crear_oportunidad():
         return jsonify({'opportunity_id': opportunity_id}), 201
     else:
         return jsonify({'error': 'Método no permitido'}), 405
+
+if __name__ == '__main__':
+    app.run(port=5002, debug=True)
